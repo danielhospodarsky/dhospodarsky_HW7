@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webform 2</title>
+    <link rel="stylesheet" href="./stylesheet.css">
 </head>
+<header>
+    <h2>Iowa Undergraduate Student Lifestyle Survey:</h2>
+</header>
 <body>
 
     <form>
@@ -26,7 +30,7 @@
         <input type="checkbox" id="elray" name="elray" value="Elrays">
         <label for="elray"> Elrays</label><br>
         <label for="other">Other:</label>
-        <input type="text" id="other" name="other" required placeholder="Optional">
+        <input type="text" id="other" name="other" required placeholder="Optional" style="width: 150px; height: 20px;">
         <br>
         <br>
         <label for="year">What is your favorite restaurant to eat at? (Select one or more)</label><br>
@@ -45,30 +49,34 @@
         <input type="checkbox" id="bg" name="bg" value="Bread Garden">
         <label for="bg"> Bread Garden</label><br>
         <label for="other">Other:</label>
-        <input type="text" id="other" name="other" required placeholder="Optional">
+        <input type="text" id="other" name="other" required placeholder="Optional" style="width: 150px; height: 20px;">
         <br>
         <br>
-        <label for="cars">Choose a favorite Iowa sporting event:</label><br>
-        <select id="cars" name="cars" size="4" multiple>
-            <option value="volvo">Football at Kinnick</option>
-            <option value="saab">Basketball at Carver</option>
-            <option value="fiat">Wrestling at Carver</option>
-            <option value="audi">Intramurals at the Fieldhouse</option>
+        <label for="event">Choose a favorite Iowa sporting event:</label><br>
+        <select id="event" name="event">
+            <option value="option">Please select an option...</option>
+            <option value="football">Football at Kinnick</option>
+            <option value="basketball">Basketball at Carver</option>
+            <option value="wrestling">Wrestling at Carver</option>
+            <option value="intramurals">Intramurals at the Fieldhouse</option>
+            <option value="never">I have never attended any of these events</option>
             <br>
         </select>
         <br>
         <br>
         <label for="study">Where is your favorite place to study?</label><br>
-        <input type="text" id="study" name="study"><br>
+        <input type="text" id="study" name="study" required placeholder="Ex. Library, Bizhub, Encounter, etc."><br>
         <br>
         <label for="clubs">Do you participate in any clubs or sports at Iowa?</label><br>
-        <input type="text" id="clubs" name="clubs"><br>
+        <input type="text" id="clubs" name="clubs" required placeholder="Ex. Robotics, Tippie Tech, Intramural Basketball, etc."><br>
         <br>
-        <label for="greek">Are you in a fraternity or sorority?</label><br>
-        <input type="text" id="greek" name="greek"><br>
+        <label for="greek">Are you in a fraternity or sorority? If so, which one?</label><br>
+        <input type="text" id="greek" name="greek" required placeholder="Optional"><br>
     <br>
     </form>
     <button onclick="window.location.href='./thankyou.html';"> Submit </button>
+    <br>
+    <p>Page 2 of 2</p>
 
 </body>
 </html>
