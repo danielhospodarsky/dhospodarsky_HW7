@@ -4,33 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Webform 2</title>
 </head>
 <body>
 
     <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="gender">Gender:</label><br>
-        <input type="text" id="gender" name="gender"><br>
-        <br>
-        <label for="year">Year in School:</label><br>
-        <input type="radio" id="fresh" name="fav_language" value="Freshman">
-        <label for="fresh">Freshman</label><br>
-        <input type="radio" id="soph" name="fav_language" value="Sophomore">
-        <label for="soph">Sophomore</label><br>
-        <input type="radio" id="junior" name="fav_language" value="Junior">
-        <label for="junior">Junior</label><br>
-        <input type="radio" id="senior" name="fav_language" value="Senior">
-        <label for="senior">Senior</label><br>
-        <br>
-        <label for="major">What is your major?</label><br>
-        <input type="text" id="major" name="Major"><br>
-        <label for="minor">What is your minor?</label><br>
-        <input type="text" id="minor" name="Minor"><br>
-        <br>
+
         <label for="year">What is your favorite bar to go to? (Select one or more)</label><br>
         <input type="checkbox" id="brothers" name="brothers" value="Brothers">
         <label for="brothers"> Brothers</label><br>
@@ -47,7 +26,7 @@
         <input type="checkbox" id="elray" name="elray" value="Elrays">
         <label for="elray"> Elrays</label><br>
         <label for="other">Other:</label>
-        <input type="text" id="other" name="other">
+        <input type="text" id="other" name="other" required placeholder="Optional">
         <br>
         <br>
         <label for="year">What is your favorite restaurant to eat at? (Select one or more)</label><br>
@@ -66,7 +45,7 @@
         <input type="checkbox" id="bg" name="bg" value="Bread Garden">
         <label for="bg"> Bread Garden</label><br>
         <label for="other">Other:</label>
-        <input type="text" id="other" name="other">
+        <input type="text" id="other" name="other" required placeholder="Optional">
         <br>
         <br>
         <label for="cars">Choose a favorite Iowa sporting event:</label><br>
@@ -79,8 +58,17 @@
         </select>
         <br>
         <br>
-        <input type="submit" value="Submit">
+        <label for="study">Where is your favorite place to study?</label><br>
+        <input type="text" id="study" name="study"><br>
+        <br>
+        <label for="clubs">Do you participate in any clubs or sports at Iowa?</label><br>
+        <input type="text" id="clubs" name="clubs"><br>
+        <br>
+        <label for="greek">Are you in a fraternity or sorority?</label><br>
+        <input type="text" id="greek" name="greek"><br>
+    <br>
     </form>
+    <button onclick="window.location.href='./thankyou.html';"> Submit </button>
 
 </body>
 </html>

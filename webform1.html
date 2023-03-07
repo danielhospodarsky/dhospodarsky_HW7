@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webform 1</title>
+</head>
+<header>
+    <h2>Welcome to Daniel's Iowa Undergraduate Student Lifestyle Survey!</h2>
+    <img src="./images/herky.png" alt="Herky" style="width:150px;height:100px;">
+    <p>Please take a few minutes to fill out this survey:</p>
+
+</header>
+<body>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required placeholder="Required" autofocus><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required placeholder="Required"><br>
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" name="email" required placeholder="Iowa Email Address"><br>
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender" required placeholder="Optional"><br>
+        <br>
+        <label for="year">Year in School:</label><br>
+        <input type="radio" id="fresh" name="fav_language" value="Freshman">
+        <label for="fresh">Freshman</label><br>
+        <input type="radio" id="soph" name="fav_language" value="Sophomore">
+        <label for="soph">Sophomore</label><br>
+        <input type="radio" id="junior" name="fav_language" value="Junior">
+        <label for="junior">Junior</label><br>
+        <input type="radio" id="senior" name="fav_language" value="Senior">
+        <label for="senior">Senior</label><br>
+        <br>
+        <label for="major">What is your major?</label><br>
+        <input type="text" id="major" name="Major" required placeholder="Required"><br>
+        <label for="minor">What is your minor?</label><br>
+        <input type="text" id="minor" name="Minor" required placeholder="If Applicable"><br>
+        <br>
+
+    </form>
+    <button onclick="window.location.href='./webform2.html';"> Next Page </button>
+
+</body>
+</html>
