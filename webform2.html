@@ -7,14 +7,14 @@
     <title>Webform 2</title>
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
-<header>
-    <h2>Iowa Undergraduate Student Lifestyle Survey:</h2>
-</header>
+
 <body>
+
+    <h2>Iowa Undergraduate Student Lifestyle Survey:</h2>
 
     <form>
 
-        <label for="year">What is your favorite bar to go to? (Select one or more)</label><br>
+        <label for="bar">What is your favorite bar to go to? (Select one or more)</label><br>
         <input type="checkbox" id="brothers" name="brothers" value="Brothers">
         <label for="brothers"> Brothers</label><br>
         <input type="checkbox" id="reunion" name="reunion" value="Reunion">
@@ -23,8 +23,8 @@
         <label for="spoco"> Sports Column</label><br>
         <input type="checkbox" id="dc" name="dc" value="Dcs">
         <label for="dc"> DCs</label><br>
-        <input type="checkbox" id="dc" name="liner" value="Airliner">
-        <label for="airliner"> Airliner</label><br>
+        <input type="checkbox" id="liner" name="liner" value="Airliner">
+        <label for="liner"> Airliner</label><br>
         <input type="checkbox" id="summit" name="summit" value="Summit">
         <label for="summit"> Summit</label><br>
         <input type="checkbox" id="elray" name="elray" value="Elrays">
@@ -33,7 +33,7 @@
         <input type="text" id="other" name="other" required placeholder="Optional" style="width: 150px; height: 20px;">
         <br>
         <br>
-        <label for="year">What is your favorite restaurant to eat at? (Select one or more)</label><br>
+        <label for="restaurant">What is your favorite restaurant to eat at? (Select one or more)</label><br>
         <input type="checkbox" id="bojames" name="bojames" value="BoJames">
         <label for="bojames"> BoJames</label><br>
         <input type="checkbox" id="mickeys" name="mickeys" value="Mickeys">
@@ -49,7 +49,7 @@
         <input type="checkbox" id="bg" name="bg" value="Bread Garden">
         <label for="bg"> Bread Garden</label><br>
         <label for="other">Other:</label>
-        <input type="text" id="other" name="other" required placeholder="Optional" style="width: 150px; height: 20px;">
+        <input type="text" id="optional" name="optional" required placeholder="Optional" style="width: 150px; height: 20px;">
         <br>
         <br>
         <label for="event">Choose a favorite Iowa sporting event:</label><br>
@@ -60,7 +60,6 @@
             <option value="wrestling">Wrestling at Carver</option>
             <option value="intramurals">Intramurals at the Fieldhouse</option>
             <option value="never">I have never attended any of these events</option>
-            <br>
         </select>
         <br>
         <br>
